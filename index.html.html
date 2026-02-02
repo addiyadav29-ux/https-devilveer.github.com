@@ -1,0 +1,320 @@
+< !DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Devil Veer | Official Links</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+                background: linear-gradient(135deg, #b31217, #e52d27);
+                color: #fff;
+                text-align: center;
+            }
+
+            .container {
+                max-width: 400px;
+                margin: auto;
+                padding: 30px 15px;
+            }
+
+            .profile img {
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                border: 4px solid #fff;
+                object-fit: cover;
+            }
+
+            h1 {
+                margin: 15px 0 5px;
+                font-size: 26px;
+            }
+
+            p {
+                margin: 0 0 25px;
+                opacity: 0.9;
+            }
+
+            .link {
+                display: block;
+                background: #000;
+                color: #fff;
+                text-decoration: none;
+                padding: 15px;
+                margin: 12px 0;
+                border-radius: 10px;
+                font-size: 16px;
+                transition: 0.3s;
+            }
+
+            .link:hover {
+                background: #1db954;
+                transform: scale(1.03);
+            }
+
+            footer {
+                margin-top: 30px;
+                font-size: 13px;
+                opacity: 0.7;
+            }
+
+            /* Instagram / YouTube icon size fix */
+            .icon {
+                width: 16px;
+                height: 16px;
+                object-fit: contain;
+            }
+
+            .yt-img {
+                width: 18px;
+                height: 18px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+
+            /* Button ke andar proper alignment */
+            .link {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+            }
+
+            .icon {
+                width: 16px;
+                height: 16px;
+            }
+
+            .link {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+            }
+
+            .insta-btn {
+                background: #000;
+                /* ya jo color chaho */
+                color: white;
+            }
+
+            .now-playing {
+                margin: 15px 0 25px;
+                font-size: 15px;
+                background: rgba(0, 0, 0, 0.25);
+                padding: 10px 16px;
+                border-radius: 25px;
+                display: inline-block;
+            }
+
+            .link {
+                transition: all 0.25s ease;
+            }
+
+            .link:hover {
+                transform: scale(1.05);
+                background: #111;
+            }
+
+            @keyframes float {
+                0% {
+                    transform: translateY(0);
+                }
+
+                50% {
+                    transform: translateY(-6px);
+                }
+
+                100% {
+                    transform: translateY(0);
+                }
+            }
+
+            .profile {
+                animation: float 2.5s ease-in-out infinite;
+            }
+
+            .contact {
+                background: #25d366;
+                color: #000;
+            }
+
+            .footer {
+                margin-top: 40px;
+                font-size: 13px;
+                opacity: 0.8;
+            }
+
+            body::before {
+                content: "";
+                position: fixed;
+                top: -100px;
+                left: -100px;
+                width: 300px;
+                height: 300px;
+                background: rgba(255, 255, 255, 0.08);
+                filter: blur(120px);
+                border-radius: 50%;
+                z-index: 0;
+            }
+
+            body::after {
+                content: "";
+                position: fixed;
+                bottom: -120px;
+                right: -120px;
+                width: 300px;
+                height: 300px;
+                background: rgba(0, 0, 0, 0.2);
+                filter: blur(120px);
+                border-radius: 50%;
+                z-index: 0;
+            }
+
+            .link {
+                animation: fadeUp 0.6s ease forwards;
+                opacity: 0;
+            }
+
+            .link:nth-child(1) {
+                animation-delay: 0.1s;
+            }
+
+            .link:nth-child(2) {
+                animation-delay: 0.2s;
+            }
+
+            .link:nth-child(3) {
+                animation-delay: 0.3s;
+            }
+
+            .link:nth-child(4) {
+                animation-delay: 0.4s;
+            }
+
+            @keyframes fadeUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(10px);
+                }
+
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            .profile {
+                box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.15),
+                    0 0 25px rgba(0, 0, 0, 0.4);
+            }
+
+            p {
+                cursor: default;
+            }
+
+            p:hover::after {
+                content: " • Music is life";
+                font-size: 12px;
+                opacity: 0.7;
+            }
+
+            .glass {
+                background: rgba(255, 255, 255, 0.12);
+                backdrop-filter: blur(10px);
+                border-radius: 20px;
+                padding: 25px;
+                box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            }
+
+            .link {
+                position: relative;
+                overflow: hidden;
+            }
+
+            .link::after {
+                content: '';
+                position: absolute;
+                inset: 0;
+                background: rgba(255, 255, 255, 0.15);
+                opacity: 0;
+            }
+
+            .link:hover::after {
+                opacity: 1;
+            }
+
+            .dots {
+                position: fixed;
+                inset: 0;
+                background:
+                    radial-gradient(#fff 1px, transparent 1px);
+                background-size: 40px 40px;
+                opacity: 0.05;
+                animation: move 30s linear infinite;
+                z-index: -1;
+            }
+
+            @keyframes move {
+                from {
+                    background-position: 0 0
+                }
+
+                to {
+                    background-position: 1000px 1000px
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="profile"><img src="profile.jpg.jpeg" alt="Devil Veer"></div>
+            <h1>Devil Veer <span class="badge">👑</span></h1>
+
+            <p>Haryanvi Artist 🎤</p>
+            <div class="now-playing">
+                🎵 Latest Track: <b>6 Manas</b>
+            </div>
+
+            <a class="link insta-btn" href="https://www.instagram.com/devilveer01" target="_blank">
+                <img src="image.jpg" alt="Instagram" class="icon">
+                <span>Instagram</span>
+            </a>
+            <a class="link yt-btn" href="https://youtube.com/@devilveer1?si=VV-qWBQWm_uv" target="_blank">
+                <img src="youtube.jpg.jpeg" alt="YouTube Channel" class="yt-img">
+                <span>YouTube</span>
+            </a>
+            <a class="link" href=" https://open.spotify.com/artist/5xddxXOt19IXTSOaMKprE3?si=WzCvFFsjRWmm80QAow5CPA"
+                target="_blank">🎵 Spotify</a><a class="link" href="http://itunes.apple.com/album/id/1866423034"
+                target="_blank">🍎 Apple Music</a>
+            <a class="link contact" href="mailto:devilveer216@gmail.com">
+                📩 CONTACT
+            </a>
+
+            <p>
+                ⏳ Next Track in 20 Days
+            </p>
+
+            <p style="letter-spacing:2px;">
+                DEVIL VEER • NO FILTER • REAL VIBES
+            <p style="color:#1db954;">
+                🟢 Active Now
+            </p <div class="glass">
+            <!-- tumhara pura content yahan -->
+        </div>
+        <div class="dots"></div>
+
+        </p <footer class="footer">
+        © 2026 Devil Veer • All Rights Reserved
+        </footer>
+
+
+        <footer>© 2026 Devil Veer </footer>
+        </div>
+    </body>
+
+    </html>
